@@ -1,0 +1,140 @@
+Live Demo Scenarios for HSBC Productivity Suite
+
+Scenario 1: Alternatives Operations & Fund Services
+
+Goal: Extracting complex fee data from an Investment Memo.
+
+The Dummy Data (Copy this into the chat first)
+
+"Fund: Global Alt Opportunities III. Management Fee: 1.5% of AUM for the first $500M, then 1.2% thereafter. Performance Fee: 20% with a 7% hurdle rate and a high-water mark. Catch-up provision: 100% until the GP has received 20% of the total profits. Minimum investment: $5M."
+
+The "Lazy" Prompt (Show this first - it gives generic text)
+
+"What are the fees for this fund?"
+
+The "COSTAR" Prompt (Show this next - it gives a professional table)
+
+(Context): I am an analyst in the Alternatives Operations team reviewing a new fund.
+(Objective): Extract the fee structure from the provided text and identify the performance hurdle.
+(Style): Professional, data-oriented.
+(Tone): Neutral and precise.
+(Audience): The Onboarding Committee.
+(Response): Present the data in a clean Markdown table with columns: 'Fee Type', 'Details', and 'Operational Complexity (Low/Medium/High)'.
+
+Scenario 2: Business Risk & Resilience
+
+Goal: Summarizing an incident report for Senior Management.
+
+The Dummy Data (Copy this)
+
+"Incident ID: 882-X. Root Cause: A manual data entry error led to an incorrect NAV calculation for the Euro-Bond ETF. Impact: 45 trades were executed at off-market prices before the error was caught. Mitigation: The error was rectified within 2 hours. Long-term fix: Implementing an automated validation check for daily NAV uploads."
+
+The "Lazy" Prompt
+
+"Summarize this incident for me."
+
+The "COSTAR" Prompt (Using "Chain of Thought" logic)
+
+(Context): I am preparing a risk summary for a monthly resilience meeting.
+(Objective): Summarize this incident into three distinct sections: Root Cause, Financial Impact, and Remediation.
+(Tone): Serious and transparent.
+(Audience): Senior Risk Management.
+(Response): Provide a summary in bullet points. After the summary, think step-by-step to suggest two additional preventative controls we could implement to avoid this in the future.
+
+Scenario 3: ETF Operations (Data Processing)
+
+Goal: Writing a professional commentary on ETF rebalancing.
+
+The Dummy Data (Copy this)
+
+"ETF Name: HSBC S&P 500 ESG UCITS. Rebalance Date: Friday. Turnover: 2.3%. Biggest additions: Tech stocks (NVIDIA, MSFT). Biggest deletions: Energy stocks due to ESG score downgrades. Tracking error remains within the 0.05% threshold."
+
+The "Lazy" Prompt
+
+"Write a short note about this rebalance."
+
+The "COSTAR" Prompt (Using Style & Persona)
+
+(Context): You are an ETF Portfolio Manager.
+(Objective): Draft a performance commentary email regarding the recent rebalance.
+(Style): Clear, authoritative, and concise (Bloomberg-style reporting).
+(Tone): Confident.
+(Audience): Institutional Clients.
+(Response): A professional email draft. Start with a 1-sentence headline and use bullet points for the key changes. Mention the tracking error specifically.
+
+Pro-Tip for the Demo: "Ask the AI to Critique the Prompt"
+
+Before you hit enter on the COSTAR prompt, show the audience this "Meta-Prompt":
+
+"I am about to give you a prompt using the COSTAR framework. Before you perform the task, tell me if I have missed any context that would help you give a better answer."
+
+Why show this? It shows the audience that prompting is a two-way conversation with the Productivity Suite.
+
+
+
+
+
+
+
+Interactive Zoom Polls for Effective Prompt Writing Session
+
+Poll 1: The Icebreaker (Gauge Experience)
+
+When to ask: Right after Slide 2 ("Meet Productivity Suite").
+Why ask this: Since your audience is non-tech, you need to know exactly who is already comfortable with the tool and who is brand new. This helps you adjust how fast you speak during the demo.
+
+Question: How often are you currently using HSBC's Productivity Suite?
+
+[ ] Multiple times a day – I'm a power user!
+
+[ ] A few times a week – Still exploring it.
+
+[ ] Rarely – I've logged in once or twice.
+
+[ ] Never – Today is my first real introduction!
+
+Poll 2: The Pain Point (Highlight the Problem)
+
+When to ask: Right after Slide 4 ("The Prompt Shift" / Good vs. Bad Prompt).
+Why ask this: This validates their struggles. When they see that others share the same frustrations, they will pay much closer attention to your solution (the COSTAR framework).
+
+Question: What is your biggest frustration when asking an AI/LLM to do a task?
+
+[ ] It gives answers that are too generic or vague.
+
+[ ] It hallucinates or makes up incorrect information.
+
+[ ] It doesn't give me the exact format I need (tables, bullet points, etc.).
+
+[ ] Staring at the blank screen—I just don't know how to word my request.
+
+Poll 3: The Knowledge Check (Transition to Demo)
+
+When to ask: Right after Slide 7 (After finishing the COSTAR framework explanation), just before Slide 8 (Interactive Demo Time).
+Why ask this: It forces them to recall what you just taught them and creates a great talking point before you open the tool for the live demo.
+
+Question: Which element of the COSTAR framework do you think we forget to include the most?
+
+[ ] Context (Giving background information)
+
+[ ] Objective (Being clear on the exact task)
+
+[ ] Audience (Telling the AI who will read it)
+
+[ ] Response (Specifying the exact output format)
+
+Poll 4: The Action Item (Drive Adoption)
+
+When to ask: On Slide 10 ("Real-World Applications") or Slide 11 ("Efficiency Gains").
+Why ask this: As a Data Scientist, you want to drive adoption. This poll tells you exactly what use-cases the Alternatives, Risk, Fund, and ETF teams actually care about, which is great data for your team!
+
+Question: Based on what you've seen today, which task do you want to tackle first using Productivity Suite?
+
+[ ] Summarizing long risk/incident reports.
+
+[ ] Extracting specific clauses or dates from complex PDFs/Prospectuses.
+
+[ ] Drafting routine emails, performance commentaries, or summaries.
+
+[ ] Comparing data or analyzing ETF rebalancing impacts.
+
