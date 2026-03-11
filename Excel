@@ -1,0 +1,130 @@
+Trade_ID	Asset_Name	Trade_Date	Quantity	Price_Local	Status	Comment
+TXN-991	ISHARES CORE S&P	01/12/2023	5000	450.2	DONE	manual fix req
+TXN-992	HSBC MSCI WORLD	Dec-02-23	1200	$120.50	Pending	check with John regarding liquidity
+txn-993	vanguard ftse	03.12.23	4500	88.22	done	-
+TXN-994	Amundi ETF	2023-12-04	300	£75.00	ERROR	price mismatch!! verify with counterparty
+TXN-995	lyxor core msci em	5-Dec-2023	8000	52,10	DONE	reconciled
+TXN-996	HSBC EURO STOXX 50	12/06/23	2500	42.15	PENDING	waiting for settlement confirmation
+TXN-997	iShares Physical Gold	07-12-23	150	$185.2	DONE	ok
+
+
+
+
+Live Demo: Handling "Messy" Excel Data
+
+1. The Dummy Data (The "Before")
+
+Copy and paste this "messy" table into a sheet. It has inconsistent dates, mixed currency symbols, and messy text.
+
+Trade_ID
+
+Asset_Name
+
+Trade_Date
+
+Quantity
+
+Price_Local
+
+Status
+
+Comment
+
+TXN-991
+
+ISHARES CORE S&P
+
+01/12/2023
+
+5000
+
+450.2
+
+DONE
+
+manual fix req
+
+TXN-992
+
+HSBC MSCI WORLD
+
+Dec-02-23
+
+1200
+
+$120.50
+
+Pending
+
+check with John
+
+txn-993
+
+vanguard ftse
+
+03.12.23
+
+4500
+
+88.22
+
+done
+
+-
+
+TXN-994
+
+Amundi ETF
+
+2023-12-04
+
+300
+
+£75.00
+
+ERROR
+
+price mismatch!!
+
+2. The COSTAR Prompt (The "After")
+
+Once you show them the messy table in Excel, copy the data, go to Productivity Suite, and use this prompt:
+
+Prompt:
+
+(Context): I am an ETF Operations Associate reconciling daily trades. I have a messy data export from the legacy system that needs to be cleaned for our daily report.
+
+(Objective): > 1. Standardize all Trade_Dates to DD-MMM-YYYY format.
+2. Standardize all Asset_Names to uppercase.
+3. Convert all prices to a numeric format (remove currency symbols).
+4. Identify which trades need immediate action based on the 'Status' or 'Comment' columns.
+
+(Style): Systematic and organized.
+
+(Tone): Operational and efficient.
+
+(Audience): My team lead who needs to sign off on these trades.
+
+(Response): > - First, provide the cleaned data in a Markdown table.
+
+Second, provide a "Priority Action List" for any trades marked as 'ERROR' or containing 'check' in the comments.
+
+[PASTE THE DATA HERE]
+
+3. Why this works for your audience:
+
+The Date Fix: Non-tech users hate inconsistent date formats (01/12 vs Dec-02). Seeing the AI fix this instantly is a huge win.
+
+The Logic: You aren't just "formatting"; you are "identifying risks" (the Action List).
+
+The Accuracy: Since Productivity Suite is built on a high-end model (GPT-5 equivalent), it handles the logic of "price mismatch!!" vs "manual fix req" much better than a simple Excel filter.
+
+4. How to present this live:
+
+Open Excel: Show the messy table. Say: "We've all seen exports like this. It would take me 10 minutes of 'Text-to-Columns' and 'Find-and-Replace' to fix this."
+
+Copy/Paste: Copy the cells and paste them directly into the Prompt window under your COSTAR instructions.
+
+The Result: Watch the AI generate a perfectly clean table and a summary of the errors.
+
+The Closing Statement: "I didn't write a single Excel formula. I just described my objective."
